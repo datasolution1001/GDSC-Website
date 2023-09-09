@@ -11,13 +11,13 @@ burgerBar.onclick = () => {
     
     burgerBar.style.display= "none";
     exitBtn.style.display = "block";
-    tl2.to(".links", {"--clip": '75%',autoAlpha:1, duration: 0.75});
+    tl2.to(".links", {display: "flex", "--clip": '75%',autoAlpha:1, duration: 0.75});
     
 }
 exitBtn.onclick = () => {
     burgerBar.style.display= "block";
     exitBtn.style.display = "none";
-    tl2.to(".links", {"--clip": '0%',autoAlpha:1, duration: 0.75});
+    tl2.to(".links", {display: "none", "--clip": '0%',autoAlpha:1, duration: 0.75});
     
 }
 
