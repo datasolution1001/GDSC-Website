@@ -209,6 +209,7 @@ nav .exit-btn .blue-red {
 @media (max-width: 1000px) {
     .text-area {
         width: 600px;
+        top: 70%;
     }
 }
 .text-area:hover {
