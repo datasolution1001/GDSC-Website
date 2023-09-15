@@ -104,12 +104,61 @@ function animaitonFirstPage ()  {
                 .to(".first-page .secondTwo", {left: "0%",duration: 0.75, delay: 0.25, ease: "power3"},'third')
                 .to(".first-page .fourth", {left: 0, zIndex: 5 , duration: 0.75, delay: 0.25, ease: "power3"},'third')
                 .to(".first-page .fifth", {left: 0, duration: 0.5, delay: 0.25, ease: "power3" }, 'third')
-                .to(".first-page .sixth", {left: 0, duration: 0.5,delay: 0.25, ease: "power3"}, 'third')
-                .to(".first-page .seventh", {right: 0,duration: 0.5, delay: 0.25, ease: "power3"},'third');
+                .to(".first-page .sixth", {left: 0,zIndex: 40, duration: 0.5,delay: 0.25, ease: "power3"}, 'third')
+                .to(".first-page .seventh", {right: 0,  duration: 0.5, delay: 0.25, ease: "power3"},'third');
                 sixthVid.play();
                 scrollCounter += 1;
                 break;
-        
+        case 3: 
+                tl3
+                .add('fourth')
+                .to(".first-page .seventh", {left: 0,duration: 0.75, delay: 0.25, ease: "power3"},'fourth')
+                .to(".first-page .eight", {right: 0, duration: 0.75, delay: 0.25, ease: "power3"},'fourth')
+                .to(".first-page .ninth", {right: 0, duration: 0.75, delay: 0.25, ease: "power3" }, 'fourth');
+                scrollCounter += 1;
+                break;
+        case 4: 
+                tl3
+                .add('fifth')
+                .to(".first-page .fifth", {left: "50%", duration: 1, delay: 0.25, ease: "power3"},'fifth')
+                .to(".first-page .sixth", {left: "50%", duration: 1, delay: 0.25, ease: "power3"},'fifth')
+                .to(".first-page .eight", {left: 0, duration: 1, delay: 0.25, ease: "power3" }, 'fifth')
+                .to(".first-page .ninth", {left: 0, duration: 1, delay: 0.25, ease: "power3" }, 'fifth')
+                .to(".first-page .ten", {left: 0, duration: 0.75, delay: 0.25, ease: "power3" }, 'fifth')
+                .to(".first-page .eleven", {right: 0, duration: 0.75, delay: 0.25, ease: "power3" }, 'fifth');
+
+                scrollCounter += 1;
+                break;
+        case 5: 
+                tl3
+                .add('sixth')
+                .to(".first-page .twelve", {top: 0, duration: 0.75, delay: 0.25, ease: "power3"},'sixth')
+                .to(".first-page .thirteen", {bottom: 0, duration: 0.75, delay: 0.25, ease: "power3"},'sixth');
+                scrollCounter += 1;
+                break;
+        case 6: 
+                tl3
+                .add('seven')
+                .to(".first-page .fourteen", {left: 0, duration: 0.75, delay: 0.25, ease: "power3"},'seven')
+                .to(".first-page .fifteen", {right: 0, duration: 0.75, delay: 0.25, ease: "power3"},'seven');
+                scrollCounter += 1;
+                break;
+        case 7: 
+                tl3
+                .add('eight')
+                .to(".first-page .seventeen", {top: 0, duration: 0.75, delay: 0.25, ease: "power3"},'eight')
+                .to(".first-page .sixteen", {bottom: 0, duration: 0.75, delay: 0.25, ease: "power3"},'eight');
+                scrollCounter += 1;
+                break;
+        case 8: 
+                tl3
+                .add('nine')
+                .to(".first-page .eighteen", {left: 0, duration: 0.75, delay: 0.25, ease: "power3"},'nine')
+                .to(".first-page .nineteen", {left: 0, duration: 0.75, delay: 0.25, ease: "power3"},'nine')
+                .to(".first-page .twenty", {right: 0, duration: 0.75, delay: 0.25, ease: "power3"},'nine')
+                .to(".first-page .twenty1", {right: 0, duration: 0.75, delay: 0.25, ease: "power3"},'nine');
+                scrollCounter += 1;
+                break;
     }
     
     
