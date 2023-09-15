@@ -10,7 +10,7 @@ let secondTwo = document.querySelector(".first-page .secondTwo");
 let third = document.querySelector(".first-page .third");
 let fourth = document.querySelector(".first-page .fourth");
 let sixthVid = document.querySelector(".first-page .sixth .vid");
-
+let eighteenVid = document.querySelector(".first-page .eighteen .vid");
 
 let tl2 = gsap.timeline();
 
@@ -157,6 +157,7 @@ function animaitonFirstPage ()  {
                 .to(".first-page .nineteen", {left: 0, duration: 0.75, delay: 0.25, ease: "power3"},'nine')
                 .to(".first-page .twenty", {right: 0, duration: 0.75, delay: 0.25, ease: "power3"},'nine')
                 .to(".first-page .twenty1", {right: 0, duration: 0.75, delay: 0.25, ease: "power3"},'nine');
+                eighteenVid.play();
                 scrollCounter += 1;
                 break;
     }
