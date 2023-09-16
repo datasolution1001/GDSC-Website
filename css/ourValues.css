@@ -1,0 +1,112 @@
+:root {
+    --white: hsl(267, 100%, 94%);
+    --black: hsl(268, 57%, 43%);
+    --green-primary: #0f9d58;
+    --yellow-primary: #fbbc04;
+    --blue-primary: #4285f4;
+    --red-primary: #ea4335;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: var(--white);
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.slide-bar {
+    width: 10px;
+    height: 600px;
+  
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    z-index: 10;
+    transform: translateY(-50%) rotateZ(15deg);
+}
+.bar {
+    width: 100%;
+    height: 150px;
+    border-radius: 100px;
+    background-color: var(--black);
+}
+.text-block {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background-color: var(--white);
+}
+.text-block h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 5rem;
+    font-weight: 800;
+    font-size: italic;
+    letter-spacing: 2px;
+    perspective: 500px;
+    transform-style: preserve-3d;
+    color: var(--black);
+}
+.text-block h1::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background: radial-gradient(var(--black), transparent 70%);
+    transform: translateY(100px) rotateX(-60deg);
+    opacity: 0.3;
+}
+.btn {
+    position: fixed;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.blue {
+    background-color: var(--blue-primary);
+}
+.red {
+    background-color: var(--red-primary);
+}
+.yellow {
+    background-color: var(--yellow-primary);
+}
+.green {
+    background-color: var(--green-primary);
+}
+button {
+    width: 20px;
+    height: 20xp;
+    border-radius: 50%;
+    border: 3px solid var(--black);
+    background-color: var(--white);   
+    cursor: pointer;
+    transition: opacity 0.3s;
+    opacity: 0.4;
+}
+button:hover {
+    opacity: 1;
+}
+#textone {
+   z-index: 6;
+    clip-path: "polygon(0 0, 18% 0, 8% 100%, 0% 100%",
+}
+#texttwo {
+   z-index: 4;
+    clip-path: "polygon(0 0, 91% 0, 81% 100%, 0% 100%",
+}
