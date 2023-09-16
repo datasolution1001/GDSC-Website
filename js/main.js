@@ -155,11 +155,51 @@ function animaitonFirstPage ()  {
                 .add('nine')
                 .to(".first-page .eighteen", {left: 0, duration: 0.75, delay: 0.25, ease: "power3"},'nine')
                 .to(".first-page .nineteen", {left: 0, duration: 0.75, delay: 0.25, ease: "power3"},'nine')
-                .to(".first-page .twenty", {right: 0, duration: 0.75, delay: 0.25, ease: "power3"},'nine')
-                .to(".first-page .twenty1", {right: 0, duration: 0.75, delay: 0.25, ease: "power3"},'nine');
+                .to(".first-page .twenty-container", {right: 0, duration: 0.75, delay: 0.25, ease: "power3"},'nine')
+                .to(".first-page  .twenty1-container", {right: 0, duration: 0.75, delay: 0.25, ease: "power3"},'nine');
                 eighteenVid.play();
                 scrollCounter += 1;
                 break;
+        case 9: 
+                tl3
+                .add('ten')
+                .to(".first-page .eighteen", {left: "-50%", duration: 0.75, delay: 0.25, ease: "power3"},'ten')
+                .to(".first-page .nineteen", {left: "-50%", duration: 0.75, delay: 0.25, ease: "power3"},'ten')
+                .to(".first-page  twenty", {right: "100%", duration: 0.75, delay: 0.25, ease: "power3"},'ten')
+                .to(".first-page .twenty1", {right: "100%", duration: 0.75, delay: 0.25, ease: "power3"},'ten')
+                .to(".first-page .twenty2", {left: 0, duration: 0.75, delay: 0.25, ease: "power3"},'ten')
+                .to(".first-page .twenty3", {left: 0, duration: 0.75, delay: 0.25, ease: "power3"},'ten')
+                .to(".first-page .twenty4-container", {right: 0, duration: 0.75, delay: 0.25, ease: "power3"},'ten')
+                .to(".first-page .twenty5-container", {right: 0, duration: 0.75, delay: 0.25, ease: "power3"},'ten');
+                eighteenVid.pause();
+                scrollCounter += 1;
+                break;
+        case 10: 
+                tl3
+                .add('eleven')
+                .to(".first-page .twenty2", {left: "-50%", duration: 0.75, delay: 0.25, ease: "power3"},'eleven')
+                .to(".first-page .twenty3", {left: "-50%", duration: 0.75, delay: 0.25, ease: "power3"},'eleven')
+                .to(".first-page .twenty4", {right: "100%", duration: 0.75, delay: 0.25, ease: "power3"},'eleven')
+                .to(".first-page .twenty5", {right: "100%", duration: 0.75, delay: 0.25, ease: "power3"},'eleven')
+                .to(".first-page .twenty6", {left: 0, duration: 0.75, delay: 0.25, ease: "power3"},'eleven')
+                .to(".first-page .twenty7", {left: 0, duration: 0.75, delay: 0.25, ease: "power3"},'eleven')
+                .to(".first-page .twenty8 ", {right: 0, duration: 0.75, delay: 0.25, ease: "power3"},'eleven')
+                .to(".first-page .twenty9", {right: 0, duration: 0.75, delay: 0.25, ease: "power3"},'eleven');
+                scrollCounter += 1;
+                break;
+        case 11: 
+                tl3
+                .add('twelve')
+                .to(".first-page .twenty10", {top: 0, duration: 0.75, delay: 0.25, ease: "power3"},'twelve')
+                .to(".first-page .twenty11", {bottom: 0, duration: 0.75, delay: 0.25, ease: "power3"},'twelve');
+                scrollCounter += 1;
+                break;
+        case 12:
+                burgerBar.style.display= "none";
+                exitBtn.style.display = "block";
+                arrowBox.style.zIndex = "10001";
+                tl2.to(".links", {display: "flex", "--clip": '75%',autoAlpha:1, duration: 0.75});
+                arrowAnimation.style.rotate = "180deg";
     }
     
     
