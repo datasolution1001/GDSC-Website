@@ -232,16 +232,16 @@ nav .exit-btn div {
     border-radius: 1px;
 }
 nav  .blue {
-    background-color: var(--blue-primary)
+    background-color: white
 }
 nav  .green {
-    background-color: var(--green-primary)
+    background-color: white
 }
 nav  .red {
-    background-color: var(--red-primary)
+    background-color: white
 }
 nav  .yellow {
-    background-color: var(--yellow-primary)
+    background-color: white
 }
 nav .exit-btn .green-yellow {
     background: linear-gradient(
