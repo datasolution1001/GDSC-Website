@@ -11,6 +11,35 @@ let third = document.querySelector(".first-page .third");
 let fourth = document.querySelector(".first-page .fourth");
 let sixthVid = document.querySelector(".first-page .sixth .vid");
 let eighteenVid = document.querySelector(".first-page .eighteen .vid");
+let dots = document.querySelectorAll(".dot");
+let delay = 0.2;
+
+// Function that will animate the dots
+const animate = (el, delay) => {
+        gsap.to(
+                el,
+                {
+                    ease: Power1.easeInOut,
+                    translateY: -30,
+                    yoyo: true,
+                    repeat: -1,
+                    duration: 1,
+                    delay: delay,
+                },
+                0
+        );
+};
+let counter = 0;
+// Iterate over each dot and run the animate method
+
+window.onload = setTimeout (dots.forEach((dot => {
+        animate(dot, delay);
+        delay += 0.2;
+        counter++;
+        
+})), 6000) ;
+
+gsap.to(".loading-container", {delay: 6, opacity: 0,zIndex: -1, duration: 1, ease: Power1.easeInOut} );
 
 let tl2 = gsap.timeline();
 
@@ -68,7 +97,7 @@ const swiper = new Swiper('.swiper', {
     allowTouchMove: false,
     loop: true,
     autoplay: {
-        delay: 4000,
+        delay: 6000,
         disableOnInteraction: false,
       },
     
@@ -195,6 +224,16 @@ function animaitonFirstPage ()  {
                 .to(".first-page .twenty11", {bottom: 0, duration: 0.75, delay: 0.25, ease: "power3"},'twelve');
                 scrollCounter += 1;
                 break;
+        case 12: 
+                burgerBar.style.display= "none";
+                exitBtn.style.display = "block";
+                arrowBox.style.zIndex = "10001";
+                tl2.to(".links", {display: "flex", "--clip": '75%',autoAlpha:1, duration: 0.75});
+                arrowAnimation.style.rotate = "180deg";
+                scrollCounter += 1;
+                break;
+        case 13: 
+                window.location.reload(true);
         default:
                 burgerBar.style.display= "none";
                 exitBtn.style.display = "block";
