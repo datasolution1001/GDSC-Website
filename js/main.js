@@ -25,6 +25,7 @@ exitBtn.onclick = () => {
     burgerBar.style.display= "block";
     exitBtn.style.display = "none";
     tl2.to(".links", {display: "none", "--clip": '0%' ,autoAlpha:1, duration: 0.75});
+    arrowAnimation.style.rotate = "0deg";
     
 }
 
@@ -194,7 +195,7 @@ function animaitonFirstPage ()  {
                 .to(".first-page .twenty11", {bottom: 0, duration: 0.75, delay: 0.25, ease: "power3"},'twelve');
                 scrollCounter += 1;
                 break;
-        case 12:
+        default:
                 burgerBar.style.display= "none";
                 exitBtn.style.display = "block";
                 arrowBox.style.zIndex = "10001";
