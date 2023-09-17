@@ -1,0 +1,9 @@
+
+section .container {
+    width: 100%;
+    max-width: 1800px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+

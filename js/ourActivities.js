@@ -146,7 +146,7 @@ mainTL
         ease: "back.Out"
     })
     .to('#slidebar', 1.5, {
-        x: 800,
+        x: 1400,
         delay: 0.5,
         ease: "back.inOut(0.8)"
     })
@@ -156,7 +156,7 @@ mainTL
         ease: "back.inOut(0.8)"
     })
     .to('#slidebar', 1.5, {
-        x: 800,
+        x: 1400,
         delay: 0.5,
         ease: "back.inOut(0.8)"
     })
@@ -166,7 +166,7 @@ mainTL
         ease: "back.inOut(0.8)"
     })
     .to('#slidebar', 1.5, {
-        x: 800,
+        x: 1400,
         delay: 0.5,
         ease: "back.inOut(0.8)"
     })
@@ -176,7 +176,7 @@ mainTL
         ease: "back.inOut(0.8)"
     })
     .to('#slidebar', 1.5, {
-        x: 800,
+        x: 1400,
         delay: 0.5,
         ease: "back.inOut(0.8)"
     })
@@ -186,7 +186,7 @@ mainTL
         ease: "back.inOut(0.8)"
     })
     .to('#slidebar', 1.5, {
-        x: 800,
+        x: 1400,
         delay: 0.5,
         ease: "back.inOut(0.8)"
     })
@@ -196,7 +196,7 @@ mainTL
         ease: "back.inOut(0.8)"
     })
     .to('#slidebar', 1.5, {
-        x: 800,
+        x: 1400,
         delay: 0.5,
         ease: "back.inOut(0.8)"
     })
