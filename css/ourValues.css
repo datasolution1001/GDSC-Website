@@ -1,6 +1,6 @@
 :root {
     --white: hsl(267, 100%, 94%);
-    --black: hsl(268, 57%, 43%);
+    --black: #4285f4;
     --green-primary: #0f9d58;
     --yellow-primary: #fbbc04;
     --blue-primary: #4285f4;
@@ -12,17 +12,190 @@
     margin: 0;
     box-sizing: border-box;
 }
+a {
+    text-decoration: none;
+    color: white;
+}
 
-body {
+/* Start Components */
+.scroll-btn {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 3px solid white;
+    position: fixed;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+@media (max-width: 1500px) {
+    .scroll-btn { 
+        bottom: 28px;
+    }
+
+}
+@media (max-width: 1200px) {
+    .scroll-btn { 
+        bottom: 25px;
+    }
+
+}
+@media (max-width: 620px) {
+    .scroll-btn { 
+        bottom: 50px;
+    }
+
+}
+.scroll-btn .material-symbols-outlined {
+    color: white;
+    font-size: 37px;
+    
+}
+/* End scroll button */
+nav {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top:30px;
+    padding-bottom: 30px;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, .3);
+
+}
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+nav .container img {
+    width: 60px;
+}
+nav .links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    z-index: -1;
+    --clip:0%;
+    clip-path: circle(var(--clip));
+    overflow: hidden;
+    
+}
+nav .links li {
+    position: relative;
+    padding: 20px 30px;
+    cursor: pointer;
+    
+    
+}
+nav .links li::before {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 1px;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    background-color: white;
+    
+    
+}
+nav .links  div {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    transition: all 0.3s ease;
+}
+@media (max-width: 620px) {
+    nav .links  div {
+        font-size: 30px;
+    }
+    
+}
+nav .links div:hover {
+    transform: scale(1.1);
+    color: #aaa;
+}
+nav .burger-bar {
+    cursor: pointer;
+}
+nav .burger-bar div{
+    width: 37px;
+    height: 4px;
+    margin-bottom: 3px;
+    border-radius: 1px;
+    
+}
+nav .exit-btn {
+    display: none;
+    cursor: pointer;
+    position: relative;
+    top: -20px;
+    right: 20px;
+}
+nav .exit-btn div {
+    height: 40px;
+    width: 4.1px;
+    margin-bottom: 3px;
+    border-radius: 1px;
+}
+nav  .blue {
+    background-color: white
+}
+nav  .green {
+    background-color: white
+}
+nav  .red {
+    background-color: white
+}
+nav  .yellow {
+    background-color: white
+}
+nav .exit-btn .green-yellow {
+    background: linear-gradient(
+        to top,
+        var(--green-primary) 50%,
+        var(--yellow-primary) 50% 100%
+
+    );
+    position: absolute;
+    rotate: 130deg;
+}
+nav .exit-btn .blue-red {
+    background: linear-gradient(
+        to top,
+        var(--blue-primary) 50%,
+        var(--red-primary) 50% 100%
+
+    );
+    position: absolute;
+    rotate: 45deg;
+}
+/* End NavBar */
+section .cont {
     display: grid;
     place-items: center;
     height: 100vh;
     background-color: var(--white);
 }
-
-.container {
+section .container {
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
     height: 300px;
     position: relative;
     overflow: hidden;
@@ -34,7 +207,7 @@ body {
     position: absolute;
     top: 50%;
     left: 100px;
-    z-index: 10;
+    z-index: 99;
     transform: translateY(-50%) rotateZ(15deg);
 }
 .bar {
@@ -79,6 +252,7 @@ body {
 }
 .blue {
     background-color: var(--blue-primary);
+    opacity: 1;
 }
 .red {
     background-color: var(--red-primary);
@@ -102,11 +276,57 @@ button {
 button:hover {
     opacity: 1;
 }
+
 #textone {
-   z-index: 6;
-    clip-path: "polygon(0 0, 18% 0, 8% 100%, 0% 100%",
+    z-index: 6;
+    clip-path: "polygon(0 0, 18% 0, 8% 100%, 0% 100%";
+   
 }
 #texttwo {
-   z-index: 4;
-    clip-path: "polygon(0 0, 91% 0, 81% 100%, 0% 100%",
+    z-index: 4;
+    opacity: 0;
+    clip-path: "polygon(0 0, 91% 0, 81% 100%, 0% 100%";
+}
+#text3 {
+    z-index: 3;
+    opacity: 0;
+    clip-path: "polygon(0 0, 18% 0, 8% 100%, 0% 100%";
+}
+#text4 {
+    z-index: 3;
+    opacity: 0;
+    clip-path: "polygon(0 0, 91% 0, 81% 100%, 0% 100%";
+}
+#text5 {
+    z-index: 3;
+    opacity: 0;
+    clip-path: "polygon(0 0, 18% 0, 8% 100%, 0% 100%";
+}
+#text6 {
+    z-index: 3;
+    opacity: 0;
+    clip-path: "polygon(0 0, 91% 0, 81% 100%, 0% 100%";
+
+}
+#text7 {
+    z-index: 3;
+    opacity: 0;
+    clip-path: "polygon(0 0, 18% 0, 8% 100%, 0% 100%";
+}
+#text8 {
+    z-index: 3;
+    opacity: 0;
+    clip-path: "polygon(0 0, 91% 0, 81% 100%, 0% 100%";
+
+}
+#text9 {
+    z-index: 3;
+    opacity: 0;
+    clip-path: "polygon(0 0, 18% 0, 8% 100%, 0% 100%";
+}
+#text10 {
+    z-index: 3;
+    opacity: 0;
+    clip-path: "polygon(0 0, 91% 0, 81% 100%, 0% 100%";
+
 }
