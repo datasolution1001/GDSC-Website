@@ -195,21 +195,26 @@ nav .links li::before {
     
     
 }
-nav .links  div {
+nav .links  a {
     font-size: 40px;
     font-weight: bold;
     color: white;
     transition: all 0.3s ease;
 }
+nav .links div {
+    transition: all 0.3s ease;
+}
 @media (max-width: 620px) {
-    nav .links  div {
+    nav .links  a {
         font-size: 30px;
     }
     
 }
+nav .links a:hover {
+    color: #aaa;
+}
 nav .links div:hover {
     transform: scale(1.1);
-    color: #aaa;
 }
 nav .burger-bar {
     cursor: pointer;
