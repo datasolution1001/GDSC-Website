@@ -87,7 +87,18 @@ document.addEventListener("keypress", (event) => {
                         top: "0",
                         ease: Power1.easeInOut
 
-                    });
+                    })
+                    .to('.mootaz', 0.5, {
+                        top: 0,
+                        ease: Power1.easeInOut,
+                        duration: 1
+                    })
+                    .to('.text-content ', 0.5, {
+                        duration: 1,
+                        opacity: 1,
+                        ease: Power1.easeInOut,
+                        "clip-path": "polygon(47% 0, 53% 0, 100% 24%, 100% 100%, 0 100%, 0 24%)",    
+                    })
                     break;
         case "2": tween
                     .to('.team-container .yellow', 1, {

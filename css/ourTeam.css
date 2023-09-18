@@ -247,11 +247,27 @@ section .team-container .boxes h3 {
 
 
 
-.question-mark img {
-    width: 100px;
-    cursor: pointer;
+.question-mark .imgq {
+
     position: relative;
     z-index: 24;
+}
+.question-mark .img-1 {
+    width: fit-content;
+
+    position: relative;
+    overflow: hidden;
+}
+.question-mark .icon{
+    width: 100px;
+    cursor: pointer;
+    
+}
+.photo {
+    width: 100px;
+    position: absolute;
+    top: 500px;
+    left: 0;
 }
 .question-mark .dimonds {
     position: relative;
@@ -313,6 +329,41 @@ section .team-container .yellow {
     top: 40vh;
     background-color: #b5c327;
     background-image: linear-gradient(315deg, #b5c327 0%, #ffc907 74%);
+}
+
+.text {
+    position: relative;
+    width: 100%;
+    top: -21.5%;
+    left: -5.5%;
+}
+.text-content {
+    background-color: white;
+    opacity: 0;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 2%, 75% 0, 25% 0, 0 3%);
+    width: 100vw;
+    height: 100vh;
+    z-index: 200;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+.text-content h2{
+    text-align: center;
+    margin: 100px auto 60px;
+
+}
+.text-content h3 {
+    width: 60%;
+    text-align: left;
+    margin: 30px auto 20px;
+}
+.text-content p {
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    font-weight: normal;
+
 }
 
 /* End ourTeam section */
