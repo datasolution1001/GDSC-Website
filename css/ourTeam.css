@@ -338,7 +338,7 @@ section .team-container .yellow {
     left: -5.5%;
 }
 .text-content {
-    background-color: white;
+    background-color: whitesmoke;
     opacity: 0;
     clip-path: polygon(25% 0%, 75% 0%, 100% 2%, 75% 0, 25% 0, 0 3%);
     width: 100vw;
@@ -347,6 +347,7 @@ section .team-container .yellow {
     position: absolute;
     top: 0;
     opacity: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .text-content h2{
     text-align: center;
