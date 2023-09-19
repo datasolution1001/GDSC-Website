@@ -10,6 +10,28 @@
     margin: 0;
     box-sizing: border-box;
 }
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: var(--blue-primary); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background-color: #ffffff;
+    background-image: linear-gradient(315deg, #ffffff 0%, #91a6ff 74%);
+}
 body {
     background-color: #111;
     font-family: 'Roboto', sans-serif;
@@ -353,7 +375,7 @@ section .team-container .yellow {
     border-radius: 10px;
     box-shadow: 0 0 22px #3336;
     margin: 50px auto;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 .information .img {
     position: relative;
@@ -450,7 +472,7 @@ section .team-container .yellow {
     border-radius: 10px;
     box-shadow: 0 0 22px #3336;
     margin: 50px auto;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 .gr-information-container .information .img {
     position: relative;
