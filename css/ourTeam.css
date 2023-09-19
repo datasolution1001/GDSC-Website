@@ -365,7 +365,7 @@ section .team-container .yellow {
     left: -120%;
     top: 0;
 }
-.information {
+.information-container  .information {
     position: relative;
     opacity: 0;
     width: 50%;
