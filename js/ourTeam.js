@@ -113,16 +113,9 @@ document.addEventListener("keypress", (event) => {
                     captionH3.innerHTML = "Mootaz Akermi";
                     captionP.innerHTML = "Quality Manager";
                     textH1.innerHTML = "About Me";
-                    textP1.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nobis atque beatae ea quibusdam dolorem pariatur iusto possimus quae suscipit, laborum magni explicabo velit, ducimus delectus numquam cupiditate consequuntur amet!";
+                    textP1.innerHTML = "Hi I'm Mootaz Akermi, I'm a third-year Computer Science student with expertise in web development and penetration testing. As the Quality Manager at Google Developer Student Club ISI Ariana, I'm dedicated to empowering tech enthusiasts and fostering innovation.";
                     textH2.innerHTML = "My plan";
-                    textP2.innerHTML = "Lorem, ipsum dolor sit amet consectetur adipisicing \
-                    elit. Maxime dolorem quod voluptatum rem dolorum \
-                    odio eum? Hic quibusdam eos facere culpa animi harum \
-                    repellendus, ad velit non, praesentium similique fuga\
-                     perspiciatis adipisci debitis molestias. Eaque,\
-                      repellendus. Perferendis tempore quibusdam cum \
-                      earum eligendi \
-                    nihil ex soluta quis? Aut, dolorem? Architecto, at.";
+                    textP2.innerHTML = "As Quality Manager at GDSC ISI Ariana, my vision is a dynamic, inclusive community driven by uncompromising quality. We will celebrate diversity, uphold industry standards, and craft impactful projects that leave a lasting mark in the tech ecosystem.";
                     facebookLink.href = "https://www.facebook.com/akermimootaz/";
                     instagramLink.href = "https://www.facebook.com/akermimootaz/";
                     linkedinLink.href = "https://www.facebook.com/akermimootaz/";
@@ -201,16 +194,9 @@ document.addEventListener("keypress", (event) => {
                     captionH3.innerHTML = "Ameni Besbes";
                     captionP.innerHTML = "GDSC Lead";
                     textH1.innerHTML = "About Me";
-                    textP1.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nobis atque beatae ea quibusdam dolorem pariatur iusto possimus quae suscipit, laborum magni explicabo velit, ducimus delectus numquam cupiditate consequuntur amet!";
+                    textP1.innerHTML = "Hey guys! My name is Ameni BESBES, 2nd year Computer Science student at ISI Ariana and the Google DSC lead for the 2023-2024 mandate at our institute.";
                     textH2.innerHTML = "My plan";
-                    textP2.innerHTML = "Lorem, ipsum dolor sit amet consectetur adipisicing \
-                    elit. Maxime dolorem quod voluptatum rem dolorum \
-                    odio eum? Hic quibusdam eos facere culpa animi harum \
-                    repellendus, ad velit non, praesentium similique fuga\
-                     perspiciatis adipisci debitis molestias. Eaque,\
-                      repellendus. Perferendis tempore quibusdam cum \
-                      earum eligendi \
-                    nihil ex soluta quis? Aut, dolorem? Architecto, at.";
+                    textP2.innerHTML = "My plan is to create an environment where all students can learn and connect. We plan to foster a thriving community where we can gain valuable knowledge, communicate with each other and connect with fellow tech enthusiasts and learners!";
                     facebookLink.href = "https://www.facebook.com/ameni.besbes2036";
                     instagramLink.href = "";
                     linkedinLink.href = "https://www.linkedin.com/in/ameni-besbes/";
@@ -246,16 +232,9 @@ document.addEventListener("keypress", (event) => {
                     captionH3.innerHTML = "Fady Trabelsi";
                     captionP.innerHTML = "GDSC Mentor";
                     textH1.innerHTML = "About Me";
-                    textP1.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nobis atque beatae ea quibusdam dolorem pariatur iusto possimus quae suscipit, laborum magni explicabo velit, ducimus delectus numquam cupiditate consequuntur amet!";
+                    textP1.innerHTML = "I'm Fedi Trabelsi, a 3rd year computer science student and a Flutter developer. I was also an former GDSC lead at my campus and I'm always looking for new experiences";
                     textH2.innerHTML = "My plan";
-                    textP2.innerHTML = "Lorem, ipsum dolor sit amet consectetur adipisicing \
-                    elit. Maxime dolorem quod voluptatum rem dolorum \
-                    odio eum? Hic quibusdam eos facere culpa animi harum \
-                    repellendus, ad velit non, praesentium similique fuga\
-                     perspiciatis adipisci debitis molestias. Eaque,\
-                      repellendus. Perferendis tempore quibusdam cum \
-                      earum eligendi \
-                    nihil ex soluta quis? Aut, dolorem? Architecto, at.";
+                    textP2.innerHTML = "My vision as a GDSC mentor is to help the future generation step up their game and develop their skills by providing them knowledge and sharing with them experiences so that they can take off on their own wings";
                     facebookLink.href = "https://www.facebook.com/profile.php?id=100010942969339";
                     instagramLink.href = "";
                     linkedinLink.href = "https://www.linkedin.com/in/fedi-trabelsi-79b245257/";
@@ -329,7 +308,7 @@ document.addEventListener("keypress", (event) => {
                     captionH3.innerHTML = "Salma Guesmi";
                     captionP.innerHTML = "Designer";
                     textH1.innerHTML = "About Me";
-                    textP1.innerHTML = "I am Salma Guesmi 2 IRS 1 and i am the Media Manager for Google DSC this year .";
+                    textP1.innerHTML = "Hi, i'm Salma GUESMI this is going to be my second year as a computer engineering student ,and i'm the Media Manager for Google DSC. Being part of this community is such an honor for me .";
                     textH2.innerHTML = "My plan";
                     textP2.innerHTML = "My motive for this position is to create simple and attractive posts, that capture all of our different events as well as our wonderfull memories as a Google DSC community at our institute .";
                     facebookLink.href = "https://www.facebook.com/salma.guesmi.758";

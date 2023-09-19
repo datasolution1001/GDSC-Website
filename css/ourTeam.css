@@ -400,6 +400,9 @@ section .team-container .yellow {
     font-size: 17px;
     padding: 15px 0;
 }
+.ptwo {
+    padding: 15px 0 0  !important;
+}
 .social-links {
     
     margin: auto;
@@ -489,10 +492,10 @@ section .team-container .yellow {
     font-size: 25px;
     margin-bottom: 10px;
 }
-.text-area p {
+.gr-information-container .text-area p {
     color: #333;
     margin-bottom: 20px;
     font-size: 17px;
-    padding: 15px 0;
+    padding: 10px 0;
 }
 /* End ourTeam section */
