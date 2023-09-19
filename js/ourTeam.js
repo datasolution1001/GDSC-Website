@@ -83,14 +83,7 @@ arrowBox.onclick = () => {
     window.location.href = "index.html";
 };
 
-// // // Start ourTeam Section
-// // const  dimondPath = {
-// //     curviness: 1.25,
-// //     autoRotate: true,
-// //     values: [
-// //         {x: 500, y: -20,}
-// //     ]
-// }
+
 let test = 0;
 document.addEventListener("keypress", (event) => {
     let tween = gsap.timeline();
@@ -117,7 +110,7 @@ document.addEventListener("keypress", (event) => {
                     });
                     img.src = "assets/mootaz.jpg";
                     img.alt = "quality manager";
-                    captionH3.innerHTML = "Mootaz akermi";
+                    captionH3.innerHTML = "Mootaz Akermi";
                     captionP.innerHTML = "Quality Manager";
                     textH1.innerHTML = "About Me";
                     textP1.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nobis atque beatae ea quibusdam dolorem pariatur iusto possimus quae suscipit, laborum magni explicabo velit, ducimus delectus numquam cupiditate consequuntur amet!";
@@ -159,10 +152,10 @@ document.addEventListener("keypress", (event) => {
                         ease: Power1.easeInOut
                 
                     });
-                    img.src = "assets/mootaz.jpg";
-                    img.alt = "quality manager";
-                    captionH3.innerHTML = "Mootaz akermi";
-                    captionP.innerHTML = "Quality Manager";
+                    img.src = "assets/nour.jpg";
+                    img.alt = "financial manager";
+                    captionH3.innerHTML = "Nour Bouajina";
+                    captionP.innerHTML = "Financial Manager";
                     textH1.innerHTML = "About Me";
                     textP1.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nobis atque beatae ea quibusdam dolorem pariatur iusto possimus quae suscipit, laborum magni explicabo velit, ducimus delectus numquam cupiditate consequuntur amet!";
                     textH2.innerHTML = "My plan";
@@ -174,9 +167,9 @@ document.addEventListener("keypress", (event) => {
                       repellendus. Perferendis tempore quibusdam cum \
                       earum eligendi \
                     nihil ex soluta quis? Aut, dolorem? Architecto, at.";
-                    facebookLink.href = "https://www.facebook.com/akermimootaz/";
-                    instagramLink.href = "https://www.facebook.com/akermimootaz/";
-                    linkedinLink.href = "https://www.facebook.com/akermimootaz/";
+                    facebookLink.href = "https://www.facebook.com/profile.php?id=100077718219181";
+                    instagramLink.href = "";
+                    linkedinLink.href = "https://www.linkedin.com/in/nour-bouajina/";
                     tween.to('.information-container ', 1, {
                         left: 0,
                         duration: 1,
@@ -203,10 +196,10 @@ document.addEventListener("keypress", (event) => {
                         ease: Power1.easeInOut
                 
                     });
-                    img.src = "assets/mootaz.jpg";
-                    img.alt = "quality manager";
-                    captionH3.innerHTML = "Mootaz akermi";
-                    captionP.innerHTML = "Quality Manager";
+                    img.src = "assets/ameni.jpg";
+                    img.alt = "lead";
+                    captionH3.innerHTML = "Ameni Besbes";
+                    captionP.innerHTML = "GDSC Lead";
                     textH1.innerHTML = "About Me";
                     textP1.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nobis atque beatae ea quibusdam dolorem pariatur iusto possimus quae suscipit, laborum magni explicabo velit, ducimus delectus numquam cupiditate consequuntur amet!";
                     textH2.innerHTML = "My plan";
@@ -218,9 +211,9 @@ document.addEventListener("keypress", (event) => {
                       repellendus. Perferendis tempore quibusdam cum \
                       earum eligendi \
                     nihil ex soluta quis? Aut, dolorem? Architecto, at.";
-                    facebookLink.href = "https://www.facebook.com/akermimootaz/";
-                    instagramLink.href = "https://www.facebook.com/akermimootaz/";
-                    linkedinLink.href = "https://www.facebook.com/akermimootaz/";
+                    facebookLink.href = "https://www.facebook.com/ameni.besbes2036";
+                    instagramLink.href = "";
+                    linkedinLink.href = "https://www.linkedin.com/in/ameni-besbes/";
                     tween.to('.information-container ', 1, {
                         left: 0,
                         duration: 1,
@@ -248,10 +241,10 @@ document.addEventListener("keypress", (event) => {
                         ease: Power1.easeInOut
                 
                     });
-                    img.src = "assets/mootaz.jpg";
-                    img.alt = "quality manager";
-                    captionH3.innerHTML = "Mootaz akermi";
-                    captionP.innerHTML = "Quality Manager";
+                    img.src = "assets/fedy.jpg";
+                    img.alt = "GDSC Mentor";
+                    captionH3.innerHTML = "Fady Trabelsi";
+                    captionP.innerHTML = "GDSC Mentor";
                     textH1.innerHTML = "About Me";
                     textP1.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nobis atque beatae ea quibusdam dolorem pariatur iusto possimus quae suscipit, laborum magni explicabo velit, ducimus delectus numquam cupiditate consequuntur amet!";
                     textH2.innerHTML = "My plan";
@@ -263,9 +256,9 @@ document.addEventListener("keypress", (event) => {
                       repellendus. Perferendis tempore quibusdam cum \
                       earum eligendi \
                     nihil ex soluta quis? Aut, dolorem? Architecto, at.";
-                    facebookLink.href = "https://www.facebook.com/akermimootaz/";
-                    instagramLink.href = "https://www.facebook.com/akermimootaz/";
-                    linkedinLink.href = "https://www.facebook.com/akermimootaz/";
+                    facebookLink.href = "https://www.facebook.com/profile.php?id=100010942969339";
+                    instagramLink.href = "";
+                    linkedinLink.href = "https://www.linkedin.com/in/fedi-trabelsi-79b245257/";
                     tween.to('.information-container ', 1, {
                         left: 0,
                         duration: 1,
@@ -293,7 +286,7 @@ document.addEventListener("keypress", (event) => {
                         ease: Power1.easeInOut
                 
                     });
-                    img.src = "assets/mootaz.jpg";
+                    img.src = "assets/malak.jpg";
                     img.alt = "human ressources";
                     captionH3.innerHTML = "Malak Ben Mabrouk";
                     captionP.innerHTML = "Human Resource Manager";
@@ -331,24 +324,17 @@ document.addEventListener("keypress", (event) => {
                         ease: Power1.easeInOut
                 
                     });
-                    img.src = "assets/mootaz.jpg";
-                    img.alt = "quality manager";
-                    captionH3.innerHTML = "Mootaz akermi";
-                    captionP.innerHTML = "Quality Manager";
+                    img.src = "assets/salma.jpg";
+                    img.alt = "Designer";
+                    captionH3.innerHTML = "Salma Guesmi";
+                    captionP.innerHTML = "Designer";
                     textH1.innerHTML = "About Me";
-                    textP1.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nobis atque beatae ea quibusdam dolorem pariatur iusto possimus quae suscipit, laborum magni explicabo velit, ducimus delectus numquam cupiditate consequuntur amet!";
+                    textP1.innerHTML = "I am Salma Guesmi 2 IRS 1 and i am the Media Manager for Google DSC this year .";
                     textH2.innerHTML = "My plan";
-                    textP2.innerHTML = "Lorem, ipsum dolor sit amet consectetur adipisicing \
-                    elit. Maxime dolorem quod voluptatum rem dolorum \
-                    odio eum? Hic quibusdam eos facere culpa animi harum \
-                    repellendus, ad velit non, praesentium similique fuga\
-                     perspiciatis adipisci debitis molestias. Eaque,\
-                      repellendus. Perferendis tempore quibusdam cum \
-                      earum eligendi \
-                    nihil ex soluta quis? Aut, dolorem? Architecto, at.";
-                    facebookLink.href = "https://www.facebook.com/akermimootaz/";
-                    instagramLink.href = "https://www.facebook.com/akermimootaz/";
-                    linkedinLink.href = "https://www.facebook.com/akermimootaz/";
+                    textP2.innerHTML = "My motive for this position is to create simple and attractive posts, that capture all of our different events as well as our wonderfull memories as a Google DSC community at our institute .";
+                    facebookLink.href = "https://www.facebook.com/salma.guesmi.758";
+                    instagramLink.href = "";
+                    linkedinLink.href = "https://www.linkedin.com/in/salma-guesmi-520980253/";
                     tween.to('.information-container ', 1, {
                         left: 0,
                         duration: 1,
