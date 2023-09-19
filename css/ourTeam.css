@@ -486,6 +486,7 @@ section .team-container .yellow {
 }
 .gr-information-container .information img {
     position: relative;
+    
     width: 100%;
     bottom: 80px;
 }
