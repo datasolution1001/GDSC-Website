@@ -457,6 +457,13 @@ body:has(.text-area:hover)  img  {
     transform: scale(1.5);
     
 }
+.first-page .sixth video source {
+    position: relative;
+    width: 1000px;
+    height: 100%;
+    transform: scale(1.5);
+    
+}
 .first-page .seventh {
     width: 50%;
     height: 100%;

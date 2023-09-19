@@ -90,12 +90,17 @@ arrowBox.onclick = () => {
 // //         {x: 500, y: -20,}
 // //     ]
 // }
-
-
+let test = 0;
 document.addEventListener("keypress", (event) => {
-    const tween = gsap.timeline();
-    key = event.key; 
-    console.log(key);
+    let tween = gsap.timeline();
+
+    
+    if (test === 0) {
+        key = event.key; 
+        console.log(key);
+        test = key;
+    }
+    
     switch (key ) {
         case "1": tween
                     .to('.team-container .red', 1, {
@@ -288,23 +293,16 @@ document.addEventListener("keypress", (event) => {
                 
                     });
                     img.src = "assets/mootaz.jpg";
-                    img.alt = "quality manager";
-                    captionH3.innerHTML = "Mootaz akermi";
-                    captionP.innerHTML = "Quality Manager";
+                    img.alt = "human ressources";
+                    captionH3.innerHTML = "Malak Ben Mabrouk";
+                    captionP.innerHTML = "Human Resource Manager";
                     textH1.innerHTML = "About Me";
-                    textP1.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nobis atque beatae ea quibusdam dolorem pariatur iusto possimus quae suscipit, laborum magni explicabo velit, ducimus delectus numquam cupiditate consequuntur amet!";
+                    textP1.innerHTML = "Hello, I'm Malak BEN MABROUK, the HR Manager at GDSC, and I'm currently in my third year as a computer science student. It's a pleasure to be part of this dynamic team.";
                     textH2.innerHTML = "My plan";
-                    textP2.innerHTML = "Lorem, ipsum dolor sit amet consectetur adipisicing \
-                    elit. Maxime dolorem quod voluptatum rem dolorum \
-                    odio eum? Hic quibusdam eos facere culpa animi harum \
-                    repellendus, ad velit non, praesentium similique fuga\
-                     perspiciatis adipisci debitis molestias. Eaque,\
-                      repellendus. Perferendis tempore quibusdam cum \
-                      earum eligendi \
-                    nihil ex soluta quis? Aut, dolorem? Architecto, at.";
-                    facebookLink.href = "https://www.facebook.com/akermimootaz/";
-                    instagramLink.href = "https://www.facebook.com/akermimootaz/";
-                    linkedinLink.href = "https://www.facebook.com/akermimootaz/";
+                    textP2.innerHTML = "Hello, I'm Malak BEN MABROUK, the HR Manager at GDSC, and I'm currently in my third year as a computer science student. It's a pleasure to be part of this dynamic team.";
+                    facebookLink.href = "https://www.facebook.com/malak.benmabrouk.3";
+                    instagramLink.href = "";
+                    linkedinLink.href = "https://www.linkedin.com/in/malak-ben-mabrouk-1b1793259/";
                     tween.to('.information-container ', 1, {
                         left: 0,
                         duration: 1,
@@ -369,6 +367,8 @@ document.addEventListener("keypress", (event) => {
     
     }
 });
+    
+
 
 let tween2 = gsap.timeline();
 
@@ -387,6 +387,7 @@ exitBtn2.onclick = () => {
         ease: Power1.easeInOut
 
     });
+    test = 0;
     counter += 1;
    console.log(counter);
 };
