@@ -353,7 +353,7 @@ section .team-container .yellow {
     border-radius: 10px;
     box-shadow: 0 0 22px #3336;
     margin: 50px auto;
-    overflow: hidden;
+    overflow: scroll;
 }
 .information .img {
     position: relative;
@@ -450,7 +450,7 @@ section .team-container .yellow {
     border-radius: 10px;
     box-shadow: 0 0 22px #3336;
     margin: 50px auto;
-    overflow: hidden;
+    overflow: scroll;
 }
 .gr-information-container .information .img {
     position: relative;
@@ -497,5 +497,11 @@ section .team-container .yellow {
     margin-bottom: 20px;
     font-size: 17px;
     padding: 10px 0;
+}
+.gr-information-container .text-area .ptwo {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 17px;
+    padding: 10px 0 0 !important;
 }
 /* End ourTeam section */

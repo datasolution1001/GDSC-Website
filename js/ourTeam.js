@@ -304,9 +304,9 @@ document.addEventListener("keypress", (event) => {
                 
                     });
                     img.src = "assets/salma.jpg";
-                    img.alt = "Designer";
+                    img.alt = "Media Manager";
                     captionH3.innerHTML = "Salma Guesmi";
-                    captionP.innerHTML = "Designer";
+                    captionP.innerHTML = "Media Manager";
                     textH1.innerHTML = "About Me";
                     textP1.innerHTML = "Hi, i'm Salma GUESMI this is going to be my second year as a computer engineering student ,and i'm the Media Manager for Google DSC. Being part of this community is such an honor for me .";
                     textH2.innerHTML = "My plan";
