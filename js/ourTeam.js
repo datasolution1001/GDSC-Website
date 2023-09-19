@@ -13,6 +13,7 @@ let facebookLink = document.querySelector(".social-links .fb");
 let instagramLink = document.querySelector(".social-links .in");
 let linkedinLink = document.querySelector(".social-links .li");
 let exitBtn2 = document.querySelector(".exit");
+let exitBtn3 = document.querySelector(".exit3");
 let informationCont = document.querySelector(".information-container");
 let red = document.querySelector(".team-container .red");
 let orange = document.querySelector(".team-container .orange");
@@ -387,15 +388,15 @@ exitBtn2.onclick = () => {
         ease: Power1.easeInOut
 
     });
+    
     test = 0;
     counter += 1;
    console.log(counter);
-};
-
-let tween3 = gsap.timeline();
-if (counter == 7) {
+   let tween3 = gsap.timeline();
+if (counter === 6) {
    tween3
             .to('.gr-information-container  ', 1, {
+                delay: 3,
                 left: 0,
                 duration: 1,
                 ease: Power1.easeInOut
@@ -407,10 +408,32 @@ if (counter == 7) {
                 ease: Power1.easeInOut
         
             });
+        } 
+        
+};
+
+let tween4 = gsap.timeline();
+exitBtn3.onclick = () => { 
+    
+        tween4
+                .to('.gr-information-container  .information', 1, {
+                    opacity: 0,
+                    duration: 1,
+                    ease: Power1.easeInOut
             
+                })
+                .to('.gr-information-container  ', 1, {
+                     left: "-120%",
+                     duration: 1,
+                     ease: Power1.easeInOut
+             
+                 });
+                 
+                 window.location.href = "ourTeam.html";
+};
         
   
-}
+
     
 
 // End ourTeam Section

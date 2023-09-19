@@ -397,6 +397,8 @@ section .team-container .yellow {
 .text-area p {
     color: #333;
     margin-bottom: 40px;
+    font-size: 17px;
+    padding: 15px 0;
 }
 .social-links {
     
@@ -410,14 +412,16 @@ section .team-container .yellow {
     font-size: 30px;
     left: 10px;
 }
-.exit {
+.exit,
+.exit3{
     position: absolute;
     top: 20px;
     right: 20px;
     z-index: 200000;
     cursor: pointer;
 }
-.exit i {
+.exit i,
+.exit3 i {
     font-size: 30px;
     color: white;
 }
@@ -488,5 +492,7 @@ section .team-container .yellow {
 .text-area p {
     color: #333;
     margin-bottom: 20px;
+    font-size: 17px;
+    padding: 15px 0;
 }
 /* End ourTeam section */
