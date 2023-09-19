@@ -2,12 +2,32 @@ const arrowBox = document.querySelector(".scroll-btn");
 let arrowAnimation = document.querySelector(".arrow-animation");
 let burgerBar = document.querySelector(".burger-bar");
 let exitBtn = document.querySelector(".exit-btn");
-// let dred = document.querySelector(".dred");
-// let style = window.getComputedStyle(dred);
-// let left = style.getPropertyValue('top');
-// console.log(left);
+let img = document.querySelector(".img img");
+let captionH3 = document.querySelector(".caption h3");
+let captionP = document.querySelector(".caption p");
+let textH1 = document.querySelector(".text-area .one");
+let textP1 = document.querySelector(".text-area .pone");
+let textH2 = document.querySelector(".text-area .two");
+let textP2 = document.querySelector(".text-area .ptwo");
+let facebookLink = document.querySelector(".social-links .fb");
+let instagramLink = document.querySelector(".social-links .in");
+let linkedinLink = document.querySelector(".social-links .li");
+let exitBtn2 = document.querySelector(".exit");
+let informationCont = document.querySelector(".information-container");
+let red = document.querySelector(".team-container .red");
+let orange = document.querySelector(".team-container .orange");
+let blue = document.querySelector(".team-container .blue");
+let yellow = document.querySelector(".team-container .yellow");
+let green = document.querySelector(".team-container .green");
+let purple = document.querySelector(".team-container .purple");
 
-
+let leftRed = 1;
+let leftBlue = 1;
+let leftYellow = 1;
+let leftPurple = 1;
+let leftGreen = 1;
+let leftOrange = 1;
+let counter = 0;
 let tl22 = gsap.timeline();
 
 burgerBar.onclick = () => {
@@ -71,6 +91,7 @@ arrowBox.onclick = () => {
 // //     ]
 // }
 
+
 document.addEventListener("keypress", (event) => {
     const tween = gsap.timeline();
     key = event.key; 
@@ -87,18 +108,38 @@ document.addEventListener("keypress", (event) => {
                         top: "0",
                         ease: Power1.easeInOut
 
-                    })
-                    .to('.mootaz', 0.5, {
-                        top: 0,
-                        ease: Power1.easeInOut,
-                        duration: 1
-                    })
-                    .to('.text-content ', 0.5, {
+                    });
+                    img.src = "assets/mootaz.jpg";
+                    img.alt = "quality manager";
+                    captionH3.innerHTML = "Mootaz akermi";
+                    captionP.innerHTML = "Quality Manager";
+                    textH1.innerHTML = "About Me";
+                    textP1.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nobis atque beatae ea quibusdam dolorem pariatur iusto possimus quae suscipit, laborum magni explicabo velit, ducimus delectus numquam cupiditate consequuntur amet!";
+                    textH2.innerHTML = "My plan";
+                    textP2.innerHTML = "Lorem, ipsum dolor sit amet consectetur adipisicing \
+                    elit. Maxime dolorem quod voluptatum rem dolorum \
+                    odio eum? Hic quibusdam eos facere culpa animi harum \
+                    repellendus, ad velit non, praesentium similique fuga\
+                     perspiciatis adipisci debitis molestias. Eaque,\
+                      repellendus. Perferendis tempore quibusdam cum \
+                      earum eligendi \
+                    nihil ex soluta quis? Aut, dolorem? Architecto, at.";
+                    facebookLink.href = "https://www.facebook.com/akermimootaz/";
+                    instagramLink.href = "https://www.facebook.com/akermimootaz/";
+                    linkedinLink.href = "https://www.facebook.com/akermimootaz/";
+                    tween.to('.information-container ', 1, {
+                        left: 0,
                         duration: 1,
-                        opacity: 1,
-                        ease: Power1.easeInOut,
-                        "clip-path": "polygon(47% 0, 53% 0, 100% 24%, 100% 100%, 0 100%, 0 24%)",    
+                        ease: Power1.easeInOut
+
                     })
+                    .to('.information', 1, {
+                        opacity: 1,
+                        duration: 1,
+                        ease: Power1.easeInOut
+
+                    });
+                    leftRed = 0;
                     break;
         case "2": tween
                     .to('.team-container .yellow', 1, {
@@ -112,7 +153,38 @@ document.addEventListener("keypress", (event) => {
                         ease: Power1.easeInOut
                 
                     });
-                    break
+                    img.src = "assets/mootaz.jpg";
+                    img.alt = "quality manager";
+                    captionH3.innerHTML = "Mootaz akermi";
+                    captionP.innerHTML = "Quality Manager";
+                    textH1.innerHTML = "About Me";
+                    textP1.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nobis atque beatae ea quibusdam dolorem pariatur iusto possimus quae suscipit, laborum magni explicabo velit, ducimus delectus numquam cupiditate consequuntur amet!";
+                    textH2.innerHTML = "My plan";
+                    textP2.innerHTML = "Lorem, ipsum dolor sit amet consectetur adipisicing \
+                    elit. Maxime dolorem quod voluptatum rem dolorum \
+                    odio eum? Hic quibusdam eos facere culpa animi harum \
+                    repellendus, ad velit non, praesentium similique fuga\
+                     perspiciatis adipisci debitis molestias. Eaque,\
+                      repellendus. Perferendis tempore quibusdam cum \
+                      earum eligendi \
+                    nihil ex soluta quis? Aut, dolorem? Architecto, at.";
+                    facebookLink.href = "https://www.facebook.com/akermimootaz/";
+                    instagramLink.href = "https://www.facebook.com/akermimootaz/";
+                    linkedinLink.href = "https://www.facebook.com/akermimootaz/";
+                    tween.to('.information-container ', 1, {
+                        left: 0,
+                        duration: 1,
+                        ease: Power1.easeInOut
+
+                    })
+                    .to('.information', 1, {
+                        opacity: 1,
+                        duration: 1,
+                        ease: Power1.easeInOut
+
+                    });
+                    leftOrange= 0;
+                    break;
         case "3": tween
                     .to('.team-container .blue', 1, {
                         top: "31vh",
@@ -125,6 +197,38 @@ document.addEventListener("keypress", (event) => {
                         ease: Power1.easeInOut
                 
                     });
+                    img.src = "assets/mootaz.jpg";
+                    img.alt = "quality manager";
+                    captionH3.innerHTML = "Mootaz akermi";
+                    captionP.innerHTML = "Quality Manager";
+                    textH1.innerHTML = "About Me";
+                    textP1.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nobis atque beatae ea quibusdam dolorem pariatur iusto possimus quae suscipit, laborum magni explicabo velit, ducimus delectus numquam cupiditate consequuntur amet!";
+                    textH2.innerHTML = "My plan";
+                    textP2.innerHTML = "Lorem, ipsum dolor sit amet consectetur adipisicing \
+                    elit. Maxime dolorem quod voluptatum rem dolorum \
+                    odio eum? Hic quibusdam eos facere culpa animi harum \
+                    repellendus, ad velit non, praesentium similique fuga\
+                     perspiciatis adipisci debitis molestias. Eaque,\
+                      repellendus. Perferendis tempore quibusdam cum \
+                      earum eligendi \
+                    nihil ex soluta quis? Aut, dolorem? Architecto, at.";
+                    facebookLink.href = "https://www.facebook.com/akermimootaz/";
+                    instagramLink.href = "https://www.facebook.com/akermimootaz/";
+                    linkedinLink.href = "https://www.facebook.com/akermimootaz/";
+                    tween.to('.information-container ', 1, {
+                        left: 0,
+                        duration: 1,
+                        ease: Power1.easeInOut
+
+                    })
+                    .to('.information', 1, {
+                        opacity: 1,
+                        duration: 1,
+                        ease: Power1.easeInOut
+
+                    });
+                    leftBlue = 0;
+                    
                     break;
         case "4": tween
                     .to('.team-container .purple', 1, {
@@ -138,6 +242,38 @@ document.addEventListener("keypress", (event) => {
                         ease: Power1.easeInOut
                 
                     });
+                    img.src = "assets/mootaz.jpg";
+                    img.alt = "quality manager";
+                    captionH3.innerHTML = "Mootaz akermi";
+                    captionP.innerHTML = "Quality Manager";
+                    textH1.innerHTML = "About Me";
+                    textP1.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nobis atque beatae ea quibusdam dolorem pariatur iusto possimus quae suscipit, laborum magni explicabo velit, ducimus delectus numquam cupiditate consequuntur amet!";
+                    textH2.innerHTML = "My plan";
+                    textP2.innerHTML = "Lorem, ipsum dolor sit amet consectetur adipisicing \
+                    elit. Maxime dolorem quod voluptatum rem dolorum \
+                    odio eum? Hic quibusdam eos facere culpa animi harum \
+                    repellendus, ad velit non, praesentium similique fuga\
+                     perspiciatis adipisci debitis molestias. Eaque,\
+                      repellendus. Perferendis tempore quibusdam cum \
+                      earum eligendi \
+                    nihil ex soluta quis? Aut, dolorem? Architecto, at.";
+                    facebookLink.href = "https://www.facebook.com/akermimootaz/";
+                    instagramLink.href = "https://www.facebook.com/akermimootaz/";
+                    linkedinLink.href = "https://www.facebook.com/akermimootaz/";
+                    tween.to('.information-container ', 1, {
+                        left: 0,
+                        duration: 1,
+                        ease: Power1.easeInOut
+
+                    })
+                    .to('.information', 1, {
+                        opacity: 1,
+                        duration: 1,
+                        ease: Power1.easeInOut
+
+                    });
+                    leftPurple = 0;
+                    
                     break;
         case "5": tween
                     .to('.team-container .orange', 1, {
@@ -151,6 +287,38 @@ document.addEventListener("keypress", (event) => {
                         ease: Power1.easeInOut
                 
                     });
+                    img.src = "assets/mootaz.jpg";
+                    img.alt = "quality manager";
+                    captionH3.innerHTML = "Mootaz akermi";
+                    captionP.innerHTML = "Quality Manager";
+                    textH1.innerHTML = "About Me";
+                    textP1.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nobis atque beatae ea quibusdam dolorem pariatur iusto possimus quae suscipit, laborum magni explicabo velit, ducimus delectus numquam cupiditate consequuntur amet!";
+                    textH2.innerHTML = "My plan";
+                    textP2.innerHTML = "Lorem, ipsum dolor sit amet consectetur adipisicing \
+                    elit. Maxime dolorem quod voluptatum rem dolorum \
+                    odio eum? Hic quibusdam eos facere culpa animi harum \
+                    repellendus, ad velit non, praesentium similique fuga\
+                     perspiciatis adipisci debitis molestias. Eaque,\
+                      repellendus. Perferendis tempore quibusdam cum \
+                      earum eligendi \
+                    nihil ex soluta quis? Aut, dolorem? Architecto, at.";
+                    facebookLink.href = "https://www.facebook.com/akermimootaz/";
+                    instagramLink.href = "https://www.facebook.com/akermimootaz/";
+                    linkedinLink.href = "https://www.facebook.com/akermimootaz/";
+                    tween.to('.information-container ', 1, {
+                        left: 0,
+                        duration: 1,
+                        ease: Power1.easeInOut
+
+                    })
+                    .to('.information', 1, {
+                        opacity: 1,
+                        duration: 1,
+                        ease: Power1.easeInOut
+
+                    });
+                    leftYellow = 0;
+                   
                     break;
         case "6": tween
                     .to('.team-container .green', 1, {
@@ -164,15 +332,84 @@ document.addEventListener("keypress", (event) => {
                         ease: Power1.easeInOut
                 
                     });
+                    img.src = "assets/mootaz.jpg";
+                    img.alt = "quality manager";
+                    captionH3.innerHTML = "Mootaz akermi";
+                    captionP.innerHTML = "Quality Manager";
+                    textH1.innerHTML = "About Me";
+                    textP1.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nobis atque beatae ea quibusdam dolorem pariatur iusto possimus quae suscipit, laborum magni explicabo velit, ducimus delectus numquam cupiditate consequuntur amet!";
+                    textH2.innerHTML = "My plan";
+                    textP2.innerHTML = "Lorem, ipsum dolor sit amet consectetur adipisicing \
+                    elit. Maxime dolorem quod voluptatum rem dolorum \
+                    odio eum? Hic quibusdam eos facere culpa animi harum \
+                    repellendus, ad velit non, praesentium similique fuga\
+                     perspiciatis adipisci debitis molestias. Eaque,\
+                      repellendus. Perferendis tempore quibusdam cum \
+                      earum eligendi \
+                    nihil ex soluta quis? Aut, dolorem? Architecto, at.";
+                    facebookLink.href = "https://www.facebook.com/akermimootaz/";
+                    instagramLink.href = "https://www.facebook.com/akermimootaz/";
+                    linkedinLink.href = "https://www.facebook.com/akermimootaz/";
+                    tween.to('.information-container ', 1, {
+                        left: 0,
+                        duration: 1,
+                        ease: Power1.easeInOut
+
+                    })
+                    .to('.information', 1, {
+                        opacity: 1,
+                        duration: 1,
+                        ease: Power1.easeInOut
+
+                    });
+                    leftGreen = 0;
+                    
                     break;
     
     
     }
 });
 
+let tween2 = gsap.timeline();
 
 
+exitBtn2.onclick = () => {
+    tween2
+    .to('.information', 1, {
+        opacity: 0,
+        duration: 1,
+        ease: Power1.easeInOut
 
+    })
+    .to('.information-container ', 1, {
+        left: "-120%",
+        duration: 1,
+        ease: Power1.easeInOut
 
+    });
+    counter += 1;
+   console.log(counter);
+};
 
-// // End ourTeam Section
+let tween3 = gsap.timeline();
+if (counter == 7) {
+   tween3
+            .to('.gr-information-container  ', 1, {
+                left: 0,
+                duration: 1,
+                ease: Power1.easeInOut
+        
+            })
+            .to('.gr-information-container  .information', 1, {
+                opacity: 1,
+                duration: 1,
+                ease: Power1.easeInOut
+        
+            });
+            
+        
+  
+}
+    
+
+// End ourTeam Section
