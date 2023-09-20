@@ -268,7 +268,19 @@ section .team-container .boxes h3 {
 
 
 
-
+h2 {
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 100;
+    top: 16%;
+    letter-spacing: 1px;
+    
+    font-size: 22px;
+    font-weight: bold;
+   
+}
 .question-mark .imgq {
 
     position: relative;
